@@ -2,17 +2,19 @@
 
 Dialog box for angular-cli developed with Angular Material
 
-## Use
+## Getting Started
 In your app.module.ts, insert code:
-    `...";`
-    `import { PmtDialogModule } from 'pmt-dialog';";`
-    `...";`
-    `@NgModule({";`
-    `  imports: [";`
-    `    ...";`
-    `    PmtDialogModule";`
-    `  ],";`
-    `  ...";`
+```
+..."
+import { PmtDialogModule } from 'pmt-dialog';
+..."
+@NgModule({
+  imports: [
+    ...
+    PmtDialogModule
+  ],
+  ...;
+```
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
