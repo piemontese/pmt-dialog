@@ -5,9 +5,9 @@ Dialog box for angular-cli developed with Angular Material
 ## Getting Started
 In your app.module.ts, insert code:
 ```
-..."
+...
 import { PmtDialogModule } from 'pmt-dialog';
-..."
+...
 @NgModule({
   imports: [
     ...
