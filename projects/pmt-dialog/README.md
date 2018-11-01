@@ -18,11 +18,11 @@ import { PmtDialogModule } from 'pmt-dialog';
 ```
 ## Customize dialog color
 In you style.scss, add code:
-...
+```
 .pmt-dialog-container { 
   mat-dialog-container {
     background-color: #ddffdd !important;
   }
 }
-...
+```
 
