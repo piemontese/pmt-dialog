@@ -3,7 +3,7 @@
 Dialog box for angular-cli developed with Angular Material
 
 ## Getting Started
-Install
+Install packege
 ```
 npm install --save pmt-dialog
 ```
@@ -27,6 +27,25 @@ import { PmtDialogModule } from 'pmt-dialog';
   ...
 })
 ```
+
+## Use package
+```
+import { PmtDialogService } from 'pmt-dialog';
+...
+  constructor( public pmtDialogService: PmtDialogService ) {
+    this.pmtDialogService.open( 'Sample PmtDialog',   // title
+                                ['This is an example of PmtDialog'],  // array of messages
+                                'message',   // dialog type
+                                'error',   // message type
+                                [
+                                  {caption: 'Close', color: 'primary', close: true},
+                                  //                           { caption: "Cancel", color: "warn", close: true }
+                                ]  // buttons
+                              );
+  }
+```
+
+
 ## Customize dialog color
 In you style.scss, add code:
 ```
