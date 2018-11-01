@@ -1,35 +1,40 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { CdkTableModule } from '@angular/cdk/table';
-//import { MatPaginatorModule } from '@angular/material/paginator';
 // tslint:disable-next-line:max-line-length
 import { MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatInputModule, MatFormFieldModule, MatSelectModule, MatTableModule  } from '@angular/material';
 import { MatDialogModule  } from '@angular/material';
+import { MatDividerModule } from '@angular/material/divider';
 
 import 'hammerjs';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { PmtDialogModule } from 'projects/pmt-dialog/src/lib/pmt-dialog.module';
-
-import { AppComponent } from './app.component';
+import { PmtDialogRoutingModule } from './pmt-dialog-routing.module';
+import { PmtDialogComponent } from './components/pmt-dialog.component';
+import { PmtDialogService } from './services/pmt-dialog.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     CdkTableModule,
     MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatInputModule, MatFormFieldModule, MatSelectModule, MatTableModule,
     MatDialogModule,
+    MatDividerModule,
     FlexLayoutModule,
-    PmtDialogModule
+    PmtDialogRoutingModule
   ],
+  declarations: [
+    PmtDialogComponent ],
+  exports: [
+    PmtDialogComponent  ],
   providers: [
+    PmtDialogService,
   ],
   entryComponents: [
+    PmtDialogComponent,
   ],
-  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class PmtDialogModule { }

@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "pmt-dialog": [
+        "dist/pmt-dialog"
+      ],
+      "pmt-dialog/*": [
+        "dist/pmt-dialog/*"
+      ]
+    }
   }
 }
