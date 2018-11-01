@@ -3,6 +3,17 @@
 Dialog box for angular-cli developed with Angular Material
 
 ## Getting Started
+Install
+```
+npm install --save pmt-dialog
+```
+
+Upgrade package
+```
+npm uninstall --save pmt-dialog
+npm install --save pmt-dialog
+```
+
 In your app.module.ts, insert code:
 ```
 ...
