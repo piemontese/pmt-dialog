@@ -15,7 +15,7 @@ npm install --save pmt-dialog
 ```
 
 In your app.module.ts, insert code:
-```
+``` typescript
 ...
 import { PmtDialogModule } from 'pmt-dialog';
 ...
@@ -31,7 +31,7 @@ import { PmtDialogModule } from 'pmt-dialog';
 ## Use package
 
 In component typescript source
-```
+``` typescript
 import { PmtDialogService } from 'pmt-dialog';
 ...
   constructor( public pmtDialogService: PmtDialogService ) {
@@ -51,7 +51,7 @@ import { PmtDialogService } from 'pmt-dialog';
 
 ## Customize dialog color
 In you style.scss, add code:
-```
+``` scss
 .pmt-dialog-container { 
   mat-dialog-container {
     background-color: #ddffdd !important;    // set your color

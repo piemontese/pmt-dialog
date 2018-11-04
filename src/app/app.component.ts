@@ -36,7 +36,6 @@ export class AppComponent {
   }
 
   public dialogCallback( caller, result: string ) {
-    debugger;
     if ( caller ) {
       caller.pmtDialogService.open( 'Callback',
                                     ['Callback method called'],
