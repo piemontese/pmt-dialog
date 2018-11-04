@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { CdkTableModule } from '@angular/cdk/table';
-//import { MatPaginatorModule } from '@angular/material/paginator';
 // tslint:disable-next-line:max-line-length
 import { MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatInputModule, MatFormFieldModule, MatSelectModule, MatTableModule  } from '@angular/material';
 import { MatDialogModule  } from '@angular/material';

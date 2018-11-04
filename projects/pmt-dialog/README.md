@@ -29,10 +29,13 @@ import { PmtDialogModule } from 'pmt-dialog';
 ```
 
 ## Use package
+
+In component typescript source
 ```
 import { PmtDialogService } from 'pmt-dialog';
 ...
   constructor( public pmtDialogService: PmtDialogService ) {
+    // Put following code whatever you call PmtDialog
     this.pmtDialogService.open( 'Sample PmtDialog',   // title
                                 ['This is an example of PmtDialog'],  // array of messages
                                 'message',   // dialog type
@@ -51,7 +54,7 @@ In you style.scss, add code:
 ```
 .pmt-dialog-container { 
   mat-dialog-container {
-    background-color: #ddffdd !important;
+    background-color: #ddffdd !important;    // set your color
   }
 }
 ```
