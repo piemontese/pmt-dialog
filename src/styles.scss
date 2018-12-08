@@ -40,12 +40,28 @@ $config: mat-typography-config();
   @include mat-typography-level-to-styles($config, title);
 }
 
+/* .mat-dialog-title {
+  padding-left: 20px !important;
+  padding-right: 0 !important;
+  height: 40px !important;
+}
+
+.mat-dialog-content {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+ */
+
 .pmt-dialog-container { 
   mat-dialog-container {
+    /*
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0px !important;
+    */
     background-color: #ffffff !important;
   }
 }
-
 
 
 

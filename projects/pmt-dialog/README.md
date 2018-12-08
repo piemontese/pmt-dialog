@@ -1,14 +1,14 @@
 # PmtDialog
 
-Dialog box for angular-cli developed with Angular Material
+Dialog box for angular-cli developed with Angular and Angular-Material
 
 ## Getting Started
-Install packege
+### Install package
 ```
 npm install --save pmt-dialog
 ```
 
-Upgrade package
+### Upgrade package
 ```
 npm uninstall --save pmt-dialog
 npm install --save pmt-dialog
@@ -35,16 +35,19 @@ In component typescript source
 import { PmtDialogService } from 'pmt-dialog';
 ...
   constructor( public pmtDialogService: PmtDialogService ) {
-    // Put following code whatever you call PmtDialog
-    this.pmtDialogService.open( 'Sample PmtDialog',   // title
-                                ['This is an example of PmtDialog'],  // array of messages
-                                'message',   // dialog type
-                                'error',   // message type
-                                [
-                                  {caption: 'Close', color: 'primary', close: true},
-                                  //                           { caption: "Cancel", color: "warn", close: true }
-                                ]  // buttons
-                              );
+    // Enter the following code where you want to call PmtDialog
+    this.pmtDialogService.open( 
+        'Sample PmtDialog',     // title
+        ['This is an example of PmtDialog'],    // array of messages
+        'message',    // dialog type
+        'error',    // message type (info, error, warning)  
+        [
+          { caption: 'Close', color: 'primary', close: true },
+          { caption: "Cancel", color: "warn", close: true }
+        ],     // Buttons
+        callback,   // callback function (optional)
+        this    // caller (optional)
+     );
   }
 ```
 
