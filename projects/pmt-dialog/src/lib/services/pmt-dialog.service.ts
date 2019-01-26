@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-//import { Observable } from 'rxjs/Rx';
-import { Observable } from "rxjs";
+// import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs';
 import { MatDialogRef, MatDialog, MatDialogConfig } from '@angular/material';
 import { PmtDialogComponent } from '../components/pmt-dialog.component';
 import { Router } from '@angular/router';
