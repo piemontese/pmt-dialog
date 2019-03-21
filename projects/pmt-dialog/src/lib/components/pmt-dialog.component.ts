@@ -17,13 +17,13 @@ interface Button {
 })
 export class PmtDialogComponent implements OnInit {
   public caller;
-  public dialogType: String = 'message';  // message, confirm, choise
-  public title: String = '';
-  public messages: Array<String> = [];
+  public dialogType = 'message';  // message, confirm, choise
+  public title = '';
+  public messages: Array<string> = [];
   public messageType = 'info';
   public buttons: Button[];
-  public routeTo: String = '';
-  public response: String = '';
+  public routeTo = '';
+  public response = '';
   public callback: Function = null;
 
   constructor( public messageBox: MatDialogRef<PmtDialogComponent> ) { }
@@ -35,6 +35,7 @@ export class PmtDialogComponent implements OnInit {
   ngOnInit() {
   }
 
+  // tslint:disable-next-line:use-life-cycle-interface
   ngOnDestroy() {
     if ( this.callback ) {
       this.callback(this.caller, this.response);

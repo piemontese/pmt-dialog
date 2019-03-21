@@ -47,12 +47,10 @@ export class PmtDialogService {
     this.dialogRef.componentInstance.buttons = buttons;
     this.dialogRef.componentInstance.routeTo = routeTo;
     this.dialogRef.componentInstance.callback = callback;
-    const a = 1;
 
 //    return dialogRef.afterClosed();
 
-    this.dialogRef.afterClosed().subscribe(result => {
-      debugger;
+    this.dialogRef.afterClosed().subscribe(_result => {
       this.response = this.dialogRef.componentInstance.response;
       if ( routeTo !== '' ) {
         this.router.navigate([routeTo]);
